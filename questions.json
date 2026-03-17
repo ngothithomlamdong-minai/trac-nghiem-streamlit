@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Chiến thắng Bạch Đằng năm 938 do ai lãnh đạo?",
+    "options": ["Ngô Quyền", "Đinh Bộ Lĩnh", "Lê Hoàn", "Trần Hưng Đạo"],
+    "answer": "Ngô Quyền"
+  },
+  {
+    "question": "Nhà nước đầu tiên của người Việt là gì?",
+    "options": ["Âu Lạc", "Văn Lang", "Đại Cồ Việt", "Đại Việt"],
+    "answer": "Văn Lang"
+  },
+  {
+    "question": "Ai là người thống nhất đất nước sau thời kỳ 12 sứ quân?",
+    "options": ["Lý Thường Kiệt", "Đinh Bộ Lĩnh", "Ngô Quyền", "Lê Lợi"],
+    "answer": "Đinh Bộ Lĩnh"
+  },
+  {
+    "question": "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?",
+    "options": ["1953", "1954", "1955", "1956"],
+    "answer": "1954"
+  },
+  {
+    "question": "Bản Tuyên ngôn Độc lập được Chủ tịch Hồ Chí Minh đọc vào ngày nào?",
+    "options": ["2/9/1945", "19/8/1945", "1/5/1945", "30/4/1945"],
+    "answer": "2/9/1945"
+  },
+  {
+    "question": "Ai là vị vua đầu tiên của triều Nguyễn?",
+    "options": ["Gia Long", "Minh Mạng", "Tự Đức", "Bảo Đại"],
+    "answer": "Gia Long"
+  },
+  {
+    "question": "Cuộc khởi nghĩa Lam Sơn do ai lãnh đạo?",
+    "options": ["Nguyễn Trãi", "Trần Hưng Đạo", "Lê Lợi", "Quang Trung"],
+    "answer": "Lê Lợi"
+  },
+  {
+    "question": "Quang Trung đại phá quân Thanh vào năm nào?",
+    "options": ["1788", "1789", "1790", "1791"],
+    "answer": "1789"
+  },
+  {
+    "question": "Hiệp định Genève về Việt Nam được ký năm nào?",
+    "options": ["1954", "1955", "1956", "1957"],
+    "answer": "1954"
+  },
+  {
+    "question": "Ai là Tổng Bí thư đầu tiên của Đảng Cộng sản Việt Nam?",
+    "options": ["Trường Chinh", "Lê Duẩn", "Nguyễn Ái Quốc", "Trần Phú"],
+    "answer": "Trần Phú"
+  },
+  {
+    "question": "Nhà Trần nổi tiếng với mấy lần kháng chiến chống quân Nguyên – Mông?",
+    "options": ["2 lần", "3 lần", "4 lần", "5 lần"],
+    "answer": "3 lần"
+  },
+  {
+    "question": "Chiến thắng Ngọc Hồi – Đống Đa gắn với vị anh hùng nào?",
+    "options": ["Lê Lợi", "Nguyễn Huệ", "Trần Hưng Đạo", "Ngô Quyền"],
+    "answer": "Nguyễn Huệ"
+  },
+  {
+    "question": "Phong trào Cần Vương diễn ra vào cuối thế kỷ nào?",
+    "options": ["Thế kỷ XVIII", "Thế kỷ XIX", "Thế kỷ XVII", "Thế kỷ XX"],
+    "answer": "Thế kỷ XIX"
+  },
+  {
+    "question": "Chiến dịch Hồ Chí Minh toàn thắng vào ngày nào?",
+    "options": ["30/4/1975", "1/5/1975", "2/9/1975", "19/8/1975"],
+    "answer": "30/4/1975"
+  },
+  {
+    "question": "Kinh đô của nhà Lý đặt tại đâu?",
+    "options": ["Hoa Lư", "Thăng Long", "Huế", "Cổ Loa"],
+    "answer": "Thăng Long"
+  },
+  {
+    "question": "Ai là người chỉ huy chiến thắng Chi Lăng – Xương Giang?",
+    "options": ["Nguyễn Trãi", "Lê Lợi", "Trần Quốc Tuấn", "Lý Thường Kiệt"],
+    "answer": "Lê Lợi"
+  },
+  {
+    "question": "Nhà Hồ tồn tại trong bao nhiêu năm?",
+    "options": ["5 năm", "7 năm", "10 năm", "15 năm"],
+    "answer": "7 năm"
+  },
+  {
+    "question": "Phong trào Đồng Khởi diễn ra vào năm nào?",
+    "options": ["1959", "1960", "1961", "1962"],
+    "answer": "1960"
+  },
+  {
+    "question": "Hiệp định Paris về Việt Nam được ký năm nào?",
+    "options": ["1971", "1972", "1973", "1974"],
+    "answer": "1973"
+  },
+  {
+    "question": "Ai là người lãnh đạo cuộc khởi nghĩa Hai Bà Trưng?",
+    "options": ["Triệu Thị Trinh", "Hai Bà Trưng", "Ngô Quyền", "Lý Bí"],
+    "answer": "Hai Bà Trưng"
+  }
+]

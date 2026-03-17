@@ -1,42 +1,68 @@
 import streamlit as st
 import json
 
-st.set_page_config(page_title="Trac nghiem", page_icon="📝", layout="centered")
+st.set_page_config(page_title="Trac nghiem", page_icon="📝")
 
-st.title("📝 Công cụ trắc nghiệm")
-st.write("Chọn đáp án cho từng câu hỏi, sau đó bấm **Nộp bài**.")
+# --------- STATE ---------
+if "started" not in st.session_state:
+    st.session_state.started = False
 
-# Đọc file câu hỏi
-with open("questions.json", "r", encoding="utf-8") as f:
-    questions = json.load(f)
+# --------- MAN HINH CHAO ---------
+if not st.session_state.started:
 
-user_answers = []
+    st.title("📝 Chào mừng đến bài trắc nghiệm")
 
-# Hiển thị câu hỏi
-for i, q in enumerate(questions, start=1):
-    st.subheader(f"Câu {i}: {q['question']}")
-    answer = st.radio(
-        "Chọn đáp án:",
-        q["options"],
-        key=f"question_{i}"
-    )
-    user_answers.append(answer)
+    name = st.text_input("Họ tên:")
+    lop = st.text_input("Lớp:")
 
-# Nút nộp bài
-if st.button("Nộp bài"):
-    score = 0
-    st.markdown("---")
-    st.subheader("Kết quả")
+    if st.button("Bắt đầu làm bài"):
 
-    for i, q in enumerate(questions):
-        correct_answer = q["answer"]
-        user_answer = user_answers[i]
-
-        if user_answer == correct_answer:
-            score += 1
-            st.success(f"Câu {i+1}: Đúng")
+        if name.strip() == "":
+            st.warning("Vui lòng nhập họ tên")
         else:
-            st.error(f"Câu {i+1}: Sai — Đáp án đúng là: {correct_answer}")
+            st.session_state.started = True
+            st.session_state.name = name
+            st.session_state.lop = lop
+            st.rerun()
 
-    st.markdown("---")
-    st.write(f"### Bạn làm đúng {score}/{len(questions)} câu")
+# --------- MAN HINH LAM BAI ---------
+else:
+
+    st.title("📝 Công cụ trắc nghiệm")
+
+    st.write(f"Người làm bài: **{st.session_state.name}**")
+
+    with open("questions.json", "r", encoding="utf-8") as f:
+        questions = json.load(f)
+
+    user_answers = []
+
+    for i, q in enumerate(questions, start=1):
+
+        st.subheader(f"Câu {i}: {q['question']}")
+
+        options = ["-- Chọn đáp án --"] + q["options"]
+
+        answer = st.radio(
+            "Chọn:",
+            options,
+            key=f"q{i}"
+        )
+
+        user_answers.append(answer)
+
+    if st.button("Nộp bài"):
+
+        score = 0
+        st.markdown("---")
+
+        for i, q in enumerate(questions):
+
+            if user_answers[i] == q["answer"]:
+                score += 1
+                st.success(f"Câu {i+1}: Đúng")
+            else:
+                st.error(f"Câu {i+1}: Sai (Đáp án: {q['answer']})")
+
+        st.markdown("---")
+        st.write(f"### Kết quả: {score}/{len(questions)}")
